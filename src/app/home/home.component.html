@@ -1,0 +1,5 @@
+<div class="ip_weather_container">
+    <h1 class="ip_addr" *ngIf="ip_addr">Weather for: {{ip_addr}}</h1>
+    <div class="ip_response" *ngIf='lat'><strong>Lat / Long</strong> determined as: <strong>{{lat}}, {{long}}</strong>, which is in or near: <strong>{{city}}</strong></div>
+    <div class="weather_conditions" *ngIf='temp'>Temperature: <strong> {{temp}} F</strong>. Conditions: <strong>{{conditions}}</strong></div>
+</div>
